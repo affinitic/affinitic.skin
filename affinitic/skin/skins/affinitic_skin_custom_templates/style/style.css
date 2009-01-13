@@ -1,5 +1,147 @@
+body{
+background-image: url(../img/background_body.jpg);
+background-color:#7e899d;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
 #principal{
 margin-left: auto;
 margin-right: auto;
-width: 800;
+width: 800px;
+padding: 0;
+}
+
+#main_content{
+}
+
+.menu{
+width: 800px;
+}
+
+.title{
+background-color: #aec5ed;
+background-image: url(../img/background_title.jpg);
+width: 800px;
+height: 40px;
+font-family: Arial;
+font-weight: bold;
+font-size: 20pt;
+text-indent: 17px;
+color: #8a9cbc;
+}
+
+.under_title{
+background-color: #aec5ed;
+width: 800px;
+height: 27px;
+}
+
+.c01{
+background-image: url(../img/01.jpg);
+width: 39px;
+height: 12px;
+}
+
+.c02{
+background-image: url(../img/02.jpg);
+height: 12px;
+width: 722px;
+}
+
+.c03{
+background-image: url(../img/03.jpg);
+width: 39px;
+height: 12px;
+}
+
+.c04{
+background-image: url(../img/04.jpg);
+width: 39px;
+}
+
+.c05{
+background-color: #8a9cbc;
+width: 722px;
+color: #FFFFFF;
+font-size: 8pt;
+font-family: Verdana;
+}
+
+.c06{
+background-image: url(../img/06.jpg);
+width: 39px;
+}
+
+.c07{
+background-image: url(../img/07.jpg);
+width: 39px;
+height: 39px;
+}
+
+.c08{
+background-image: url(../img/08.jpg);
+height: 39px;
+width: 722px;
+}
+
+.c09{
+background-image: url(../img/09.jpg);
+width: 39px;
+height: 39px;
+}
+
+.under_main{
+width: 800px;
+height: 27px;
+}
+
+.cb01{
+background-image: url(../img/b01.jpg);
+width: 39px;
+height: 10px;
+}
+
+.cb02{
+background-image: url(../img/b02.jpg);
+height: 10px;
+width: 722px;
+}
+
+.cb03{
+background-image: url(../img/b03.jpg);
+width: 39px;
+height: 10px;
+}
+
+.cb04{
+background-image: url(../img/b04.jpg);
+width: 1px;
+height: 64px;
+}
+
+.cb05{
+background-image: url(../img/b04.jpg);
+}
+
+.cb06{
+background-image: url(../img/b04.jpg);
+width: 39px;
+}
+
+.cb07{
+background-image: url(../img/b07.jpg);
+width: 39px;
+height: 10px;
+}
+
+.cb08{
+background-image: url(../img/b08.jpg);
+height: 10px;
+width: 722px;
+}
+
+.cb09{
+background-image: url(../img/b09.jpg);
+width: 39px;
+height: 10px;
 }

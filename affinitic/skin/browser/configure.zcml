@@ -45,7 +45,7 @@
         permission="zope.Public"
         />
 
-    <!-- Home page content viewlet -->
+    <!-- Home page footer viewlet -->
     <browser:viewlet
         name="Affinitic.footer"
         manager="plone.app.layout.viewlets.interfaces.IPortalFooter"

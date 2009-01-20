@@ -5,6 +5,7 @@
         <viewlet name="plone.site_actions" />
         <viewlet name="plone.logo" />
         <viewlet name="plone.searchbox" />
+        <viewlet name="plone.global_sections"/>
     </hidden>
 
     <hidden manager="plone.portaltop" skinname="affinitic theme">
@@ -13,22 +14,31 @@
         <viewlet name="plone.personal_bar"/>
     </hidden>
 
+    <order manager="plone.portalfooter" skinname="affinitic theme">
+        <viewlet name="Affinitic.footer"/>
+    </order>
 
     <hidden manager="plone.portalfooter" skinname="affinitic theme">
         <viewlet name="plone.footer"/>
+        <viewlet name="plone.analytics"/>
         <viewlet name="plone.colophon"/>
+    </hidden>
+
+    <hidden manager="plone.contentviews" skinname="affinitic theme">
+        <viewlet name="plone.contentviews"/>
+        <viewlet name="plone.contentactions"/>
     </hidden>
 
     <order manager="plone.portalheader" skinname="affinitic theme">
         <viewlet name="Affinitic.header"/>
+        <viewlet name="Affinitic.content"/>
         <viewlet name="plone.personnal_bar"/>
         <viewlet name="plone.path_bar"/>
-        <viewlet name="plone.global_sections"/>
     </order>
 
-
-    <hidden manager="plone.portalfooter" skinname="affinitic theme">
-        <viewlet name="bnb.footer" />
+    <hidden manager="plone.belowcontenttitle" skinname="affinitic theme">
+        <viewlet name="plone.belowcontenttitle.documentbyline"/>
+        <viewlet name="plone.belowcontenttitle.keywords"/>
     </hidden>
 
 </object>

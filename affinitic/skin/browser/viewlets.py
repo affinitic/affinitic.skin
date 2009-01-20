@@ -11,5 +11,13 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.app.layout.viewlets.common import GlobalSectionsViewlet
 
 
-class AffiniticSectionsViewlet(GlobalSectionsViewlet):
+class AffiniticHeaderViewlet(GlobalSectionsViewlet):
     render = ViewPageTemplateFile('templates/headerAffinitic.pt')
+
+
+class AffiniticContentViewlet(GlobalSectionsViewlet):
+    render = ViewPageTemplateFile('templates/contentAffinitic.pt')
+
+
+class AffiniticFooterViewlet(GlobalSectionsViewlet):
+    render = ViewPageTemplateFile('templates/footerAffinitic.pt')

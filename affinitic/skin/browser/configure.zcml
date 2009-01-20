@@ -31,7 +31,25 @@
     <browser:viewlet
         name="Affinitic.header"
         manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-        class=".viewlets.AffiniticSectionsViewlet"
+        class=".viewlets.AffiniticHeaderViewlet"
+        layer=".interfaces.IAffiniticTheme"
+        permission="zope.Public"
+        />
+
+    <!-- Home page content viewlet -->
+    <browser:viewlet
+        name="Affinitic.content"
+        manager="plone.app.layout.viewlets.interfaces.IContentViews"
+        class=".viewlets.AffiniticContentViewlet"
+        layer=".interfaces.IAffiniticTheme"
+        permission="zope.Public"
+        />
+
+    <!-- Home page content viewlet -->
+    <browser:viewlet
+        name="Affinitic.footer"
+        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        class=".viewlets.AffiniticFooterViewlet"
         layer=".interfaces.IAffiniticTheme"
         permission="zope.Public"
         />

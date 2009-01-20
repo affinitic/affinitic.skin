@@ -28,8 +28,13 @@ margin-left: auto;
 margin-right: auto;
 }
 
+.footer{
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+}
 .title{
-background-image: url(../img/background_title.gif);
+background-image: url(background_title.gif);
 width: 800px;
 height: 40px;
 font-family: Arial;
@@ -58,25 +63,25 @@ height: 27px;
 }
 
 .c01{
-background-image: url(../img/01.gif);
+background-image: url(01.gif);
 width: 39px;
 height: 12px;
 }
 
 .c02{
-background-image: url(../img/02.gif);
+background-image: url(02.gif);
 height: 12px;
 width: 722px;
 }
 
 .c03{
-background-image: url(../img/03.gif);
+background-image: url(03.gif);
 width: 39px;
 height: 12px;
 }
 
 .c04{
-background-image: url(../img/04.gif);
+background-image: url(04.gif);
 width: 39px;
 }
 
@@ -89,24 +94,24 @@ font-family: Verdana;
 }
 
 .c06{
-background-image: url(../img/06.gif);
+background-image: url(06.gif);
 width: 39px;
 }
 
 .c07{
-background-image: url(../img/07.gif);
+background-image: url(07.gif);
 width: 39px;
 height: 39px;
 }
 
 .c08{
-background-image: url(../img/08.gif);
+background-image: url(08.gif);
 height: 39px;
 width: 722px;
 }
 
 .c09{
-background-image: url(../img/09.gif);
+background-image: url(09.gif);
 width: 39px;
 height: 39px;
 }
@@ -117,52 +122,52 @@ height: 27px;
 }
 
 .cb01{
-background-image: url(../img/b01.gif);
+background-image: url(b01.gif);
 width: 39px;
 height: 10px;
 }
 
 .cb02{
-background-image: url(../img/b02.gif);
+background-image: url(b02.gif);
 height: 10px;
 width: 722px;
 }
 
 .cb03{
-background-image: url(../img/b03.gif);
+background-image: url(b03.gif);
 width: 39px;
 height: 10px;
 }
 
 .cb04{
-background-image: url(../img/b04.gif);
+background-image: url(b04.gif);
 width: 1px;
 height: 64px;
 }
 
 .cb05{
-background-image: url(../img/b04.gif);
+background-image: url(b04.gif);
 }
 
 .cb06{
-background-image: url(../img/b04.gif);
+background-image: url(b04.gif);
 width: 39px;
 }
 
 .cb07{
-background-image: url(../img/b07.gif);
+background-image: url(b07.gif);
 width: 39px;
 height: 10px;
 }
 
 .cb08{
-background-image: url(../img/b08.gif);
+background-image: url(b08.gif);
 height: 10px;
 width: 722px;
 }
 
 .cb09{
-background-image: url(../img/b09.gif);
+background-image: url(b09.gif);
 width: 39px;
 height: 10px;
 }

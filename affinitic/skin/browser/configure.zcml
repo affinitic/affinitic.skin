@@ -5,7 +5,7 @@
 
     <!-- 'affinitic theme' Zope 3 browser layer -->
     <interface
-        interface=".interfaces.IThemeSpecific"
+        interface=".interfaces.IAffiniticTheme"
         type="zope.publisher.interfaces.browser.IBrowserSkinType"
         name="affinitic theme"
         />
@@ -14,17 +14,26 @@
     <!-- Zope 3 browser resources -->
 
     <!-- Resource directory for images -->
-    <browser:resourceDirectory
+    <!--<browser:resourceDirectory
         name="affinitic.skin.images"
         directory="images"
         layer=".interfaces.IThemeSpecific"
-        />
+        />-->
 
     <!-- Resource directory for stylesheets -->
     <browser:resourceDirectory
         name="affinitic.skin.stylesheets"
         directory="stylesheets"
-        layer=".interfaces.IThemeSpecific"
+        layer=".interfaces.IAffiniticTheme"
+        />
+
+    <!-- Home page header with flash animation viewlet -->
+    <browser:viewlet
+        name="Affinitic.header"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".viewlets.AffiniticSectionsViewlet"
+        layer=".interfaces.IAffiniticTheme"
+        permission="zope.Public"
         />
 
 </configure>

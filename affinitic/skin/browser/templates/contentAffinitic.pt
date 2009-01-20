@@ -1,78 +1,57 @@
 <html metal:use-macro="here/main_template/macros/master">
   <head>
-   <title metal:fill-slot="title">BlueTongue - Choix d'un troupeau pour encoder des vaccinations individuelles de bovins</title>
+   <title metal:fill-slot="title">AFFINITIC</title>
 
-   <!-- Remove for Cerise -->
-   <link rel="stylesheet" href="feuille_style.css" type="text/css">
-   <script language="Javascript" src="arsia_javascript.js"></script>
+   <link rel="stylesheet" href="main.css" type="text/css">
 
   </head>
 
 <body>
-<div metal:fill-slot="main">
-<H1>:: BlueTongue - Vaccinations individuelles de bovins ::</H1>
+<div metal:fill-slot="main" class="contentMiddle">
+  <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td colspan="3" class="title">
+                    <div class="affinitic_logo_bas"><a href="http://www.affinitic.be/"><img src="img/affinitic_logo_bas.gif" /></a></div>
+                    <div class="title_txt">Nos réalisations</div>
 
-<div class="content"
-     tal:define="isVeterinaire view/userIsVeterinaire">
-
-   <fieldset>
-   <legend class="legende">S&eacute;lectionner un troupeau</legend>
-
-      <form action="BlueTongue_Encodage_view" method="post">
-         <center>
-            <table width="100%" class="main_table" border="0">
-               <tr>
-                  <td align="center">
-                     <div class="summary">
-                        Encodage de vaccinations individuelles de bovins
-                     </div>
-                  </td>
-               </tr>	
-
-               <tr class="odd" tal:condition="isVeterinaire">
-                  <td width="50%" align="right" class="value">
-                     Num&eacute;ro de troupeau&nbsp;
-                  </td>
-                  <td width="50%" align="left">
-                     <select name="troupeau"
-                          tal:define="InfosTroupeaux python:view.getTroupeauxForUser(bovinsOnly=True)">
-                        <option value="">
-                            ...
-                        </option>
-                     <span tal:repeat="infoTroupeau InfosTroupeaux">
-                        <option value="" tal:attributes="value python:infoTroupeau['troupeau']">
-                            <span tal:condition="python: infoTroupeau['detenteur']">
-                              <span tal:replace="python: infoTroupeau['detenteur']" /> - 
-                            </span>
-                            <span tal:replace="python: infoTroupeau['troupeau']" />
-                        </option>
-                     </span>
-                     </select>
-                  </td>
-               </tr>
-
-               <tr class="even">
-                  <td width="50%" align="right" class="value">
-                     Autre troupeau&nbsp;:&nbsp;
-                  </td>
-                  <td width="50%" align="left">
-                     <input name="autre_troupeau" type="text" size="10" maxlength="8" value="" />
-                  </td>
-               </tr>
-
-               <tr>
-                  <td align="center">
-                      <input type="submit" value="Commencer l'encodage" class="input"
-                                 onMouseOver="this.style.color='green'" onMouseOut="this.style.color='#777777'"/>
-                  </td>
-               </tr>	
-            </table>
-         </center>
-      </form>
-
-   </fieldset>
-
-</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="under_title"></td>
+            </tr>
+            <tr>
+                <td class="c01"></td>
+                <td class="c02"></td>
+                <td class="c03"></td>
+            </tr>
+            <tr>
+                <td class="c04"></td>
+                <td class="c05">
+                    <p>Paragraphe 1 dshjfdsj hsd sjhdf kjhsdjf khskjfh jskd.</p>
+                    <p>Paragraphe 2 gsjdhfjkdh dskjh jsdkhf kjsdf ds sd sdjfkljhskjgh fds .</p>
+                    <p>Paragraphe 3 jskdfhkjdh kjdsh kjdhkh jsdkhf dsqfddshjfdsj hsd sjhdf kjhsdjf khskjfh jskd.</p>
+                    <p>Paragraphe 4 sdf sdlk kdskfl jlkdsj kqfddshjfdsj hsd sjhdf kjhsdjf khskjfh jskd.</p>
+                                       <p>Paragraphe 1 dshjfdsj hsd sjhdf kjhsdjf khskjfh jskd.</p>
+                    <p>Paragraphe 2 gsjdhfjkdh dskjh jsdkhf kjsdf ds sd sdjfkljhskjgh fds .</p>
+                    <p>Paragraphe 3 jskdfhkjdh kjdsh kjdhkh jsdkhf dsqfddshjfdsj hsd sjhdf kjhsdjf khskjfh jskd.</p>
+                    <p>Paragraphe 4 sdf sdlk kdskfl jlkdsj kqfddshjfdsj hsd sjhdf kjhsdjf khskjfh jskd.</p>
+                                       <p>Paragraphe 1 dshjfdsj hsd sjhdf kjhsdjf khskjfh jskd.</p>
+                    <p>Paragraphe 2 gsjdhfjkdh dskjh jsdkhf kjsdf ds sd sdjfkljhskjgh fds .</p>
+                    <p>Paragraphe 3 jskdfhkjdh kjdsh kjdhkh jsdkhf dsqfddshjfdsj hsd sjhdf kjhsdjf khskjfh jskd.</p>
+                    <p>Paragraphe 4 sdf sdlk kdskfl jlkdsj kqfddshjfdsj hsd sjhdf kjhsdjf khskjfh jskd.</p>
+                                       <p>Paragraphe 1 dshjfdsj hsd sjhdf kjhsdjf khskjfh jskd.</p>
+                    <p>Paragraphe 2 gsjdhfjkdh dskjh jsdkhf kjsdf ds sd sdjfkljhskjgh fds .</p>
+                    <p>Paragraphe 3 jskdfhkjdh kjdsh kjdhkh jsdkhf dsqfddshjfdsj hsd sjhdf kjhsdjf khskjfh jskd.</p>
+                    <p>Paragraphe 4 sdf sdlk kdskfl jlkdsj kqfddshjfdsj hsd sjhdf kjhsdjf khskjfh jskd.</p>
+                </td>
+                <td class="c06"></td>
+            </tr>
+            <tr>
+                <td class="c07"></td>
+                <td class="c08"></td>
+                <td class="c09"></td>
+            </tr>
+          </table>
 </div>
 
 </body>

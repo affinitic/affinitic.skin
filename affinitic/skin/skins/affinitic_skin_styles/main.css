@@ -22,6 +22,12 @@ padding: 0;
 #main_content{
 }
 
+.contentMiddle{
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+}
+
 .menu{
 width: 800px;
 margin-left: auto;

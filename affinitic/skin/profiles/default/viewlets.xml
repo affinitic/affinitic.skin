@@ -21,6 +21,7 @@
     </hidden>
 
     <hidden manager="plone.contentviews" skinname="affinitic theme">
+        <viewlet name="plone.contentviews"/>
         <viewlet name="plone.contentactions"/>
     </hidden>
 
@@ -31,11 +32,11 @@
         <viewlet name="plone.path_bar"/>
     </order>
 
-    <order manager="plone.portaltop" skinname="affinitic theme">
+    <hidden manager="plone.portaltop" skinname="affinitic theme">
         <viewlet name="plone.app.i18n.locales.languageselector" />
         <viewlet name="plone.path_bar"/>
         <viewlet name="plone.personal_bar"/>
-    </order>
+    </hidden>
 
     <hidden manager="plone.belowcontenttitle" skinname="affinitic theme">
         <viewlet name="plone.belowcontenttitle.documentbyline"/>

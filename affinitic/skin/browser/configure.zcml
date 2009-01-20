@@ -36,15 +36,6 @@
         permission="zope.Public"
         />
 
-    <!-- Home page content viewlet -->
-    <browser:viewlet
-        name="Affinitic.content"
-        manager="plone.app.layout.viewlets.interfaces.IContentViews"
-        class=".viewlets.AffiniticContentViewlet"
-        layer=".interfaces.IAffiniticTheme"
-        permission="zope.Public"
-        />
-
     <!-- Home page footer viewlet -->
     <browser:viewlet
         name="Affinitic.footer"
@@ -53,5 +44,15 @@
         layer=".interfaces.IAffiniticTheme"
         permission="zope.Public"
         />
+
+    <!-- Home page accueil page -->
+    <browser:page
+        for="*"
+        name="accueil"
+        permission="zope.Public"
+        class=".home.HomeView"
+        template="templates/contentAffinitic.pt"
+        />
+
 
 </configure>

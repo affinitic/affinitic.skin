@@ -193,3 +193,8 @@ margin-right: 64px;
 img{
 border: none;
 }
+
+#portal-column-content {
+padding: 0;
+padding-bottom: 27px;
+}

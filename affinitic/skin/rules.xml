@@ -1,3 +1,20 @@
 <rules xmlns="http://openplans.org/deliverance">
 
+ 	<replace content='/html/head/title' theme='/html/head/title' />
+
+    <append  content="/html/head/base"   theme="/html/head" />    
+    <append  content="/html/head/meta"   theme="/html/head" />
+    <append  content='/html/head/style'  theme='/html/head' />
+    <append  content='/html/head/script' theme='/html/head' />     
+    <append  content="/html/head/link"   theme="/html/head" />
+
+    <!-- Copy over the id/class attributes on the body tag, this is important
+	     for Kupu and per-section styling -->
+	<prepend content="/html/body/@class" theme="/html/body" />
+	<prepend content="/html/body/@id"    theme="/html/body" />	
+	<prepend content="/html/body/@dir"   theme="/html/body" />
+
+     <!-- Document Content -->
+     <copy content="//*[@id='portal-column-content']/*" theme="//*[@id='document-content']" />
+
 </rules>

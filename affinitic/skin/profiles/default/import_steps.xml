@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="affinitic.skin.various"
+               version="20091117-01"
+               handler="affinitic.skin.setuphandlers.setupVarious"
+               title="affinitic.skin: miscellaneous import steps">
+    <dependency step="skins" />
+    Various import steps that are not handled by GS import/export
+    handlers.
+  </import-step>
+</import-steps>

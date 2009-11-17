@@ -1,0 +1,2 @@
+recursive-include affinitic *
+global-exclude *pyc

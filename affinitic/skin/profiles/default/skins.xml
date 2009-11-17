@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="affinitic.skin">
+
+ <object name="affinitic_skin_custom_images"
+    meta_type="Filesystem Directory View"
+    directory="affinitic.skin:skins/affinitic_skin_custom_images"/>
+ <object name="affinitic_skin_custom_templates"
+    meta_type="Filesystem Directory View"
+    directory="affinitic.skin:skins/affinitic_skin_custom_templates"/>
+ <object name="affinitic_skin_styles"
+    meta_type="Filesystem Directory View"
+    directory="affinitic.skin:skins/affinitic_skin_styles"/>
+
+ <skin-path name="affinitic.skin" based-on="Plone Default">
+  <layer name="affinitic_skin_custom_images"
+     insert-after="custom"/>
+  <layer name="affinitic_skin_custom_templates"
+     insert-after="affinitic_skin_custom_images"/>
+  <layer name="affinitic_skin_styles"
+     insert-after="affinitic_skin_custom_templates"/>
+ </skin-path>
+
+</object>

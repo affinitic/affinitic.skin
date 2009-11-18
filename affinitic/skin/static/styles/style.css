@@ -1,0 +1,30 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/background.png");
+}
+
+
+.main{
+  width: 100%;
+}
+
+.site{
+  position: relative;
+  width: 800px;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.header{
+  height: 118px;
+  width: 100%;
+}
+
+.content{
+  width: 100%;
+}
+
+.footer{
+  width: 100%;
+}

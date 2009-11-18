@@ -16,5 +16,6 @@
 
      <!-- Document Content -->
      <copy content="//*[@id='portal-column-content']/*" theme="//*[@id='document-content']" />
+     <drop content="*[@class='documentActions']" />
 
 </rules>

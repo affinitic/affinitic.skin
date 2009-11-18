@@ -1,11 +1,22 @@
+from Products.CMFCore.utils import getToolByName
+from Products.Five.component import enableSite
+from zope.app.component.interfaces import ISite
+
+LANGUAGES = ['en', 'fr']
+
+
 def setupVarious(context):
-
-    # Ordinarily, GenericSetup handlers check for the existence of XML files.
-    # Here, we are not parsing an XML file, but we use this text file as a
-    # flag to check that we actually meant for this import step to be run.
-    # The file is found in profiles/default.
-
     if context.readDataFile('affinitic.skin_various.txt') is None:
         return
 
-    # Add additional setup code here
+    portal = context.getSite()
+    if not ISite.providedBy(portal):
+        enableSite(portal)
+    setupLanguages(portal)
+
+
+def setupLanguages(portal):
+    lang = getToolByName(portal, 'portal_languages')
+    lang.supported_langs = LANGUAGES
+    lang.setDefaultLanguage('fr')
+    lang.display_flags = 0

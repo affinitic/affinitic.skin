@@ -1,9 +1,51 @@
 /* Stylesheet for the 'affinitic.skin' Plone theme */
 
 body.smallText {
+background-color:#8a9dbd;
 font-size:11pt;
+color:#d3e7f1;
+}
+
+h1, h2{
+color:#415370;    
+}
+
+h3, h4, h5, h6{
+color:#c4d6f9;    
+}
+
+h1, h2 {
+border-bottom:1px solid #cee0ff;
+font-weight:normal;
 }
 
 .documentFirstHeading {
 display: none;
+}
+
+.documentContent {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background-color:#8a9cbc;
+font-size:110%;
+padding:1em 1em 2em !important;
+}
+
+.reference{
+margin-bottom:2em;
+border:1px solid #adbfe1;  
+}
+
+.reference legend{
+background-color:transparent;
+color:#2a59a7;
+font-variant:small-caps;
+font-weight:bold;
+font-size:1.2em;
+}
+
+.texte-reference{
+padding:0 20px;
+vertical-align:top;
 }

@@ -18,7 +18,7 @@
      <copy content="//*[@id='portal-column-content']/*" theme="//*[@id='page-content']" />
      <drop content="*[@class='documentActions']" />
 
-     <copy content="//*[@id='portal-languageselector']/*" theme="//*[@id='languages']" />
-     <copy content="//*[@id='portal-globalnav']/*" theme="//*[@id='navtabs']" />
+     <!-- Page title -->
+     <copy content="//*[@id='content']/h1/*" theme="//*[@id='title']" />
 
 </rules>

@@ -1,2 +1,5 @@
 /* Stylesheet for the 'affinitic.skin' Plone theme */
 
+.documentFirstHeading {
+display: none;
+}

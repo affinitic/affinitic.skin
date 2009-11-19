@@ -15,7 +15,7 @@
 	<prepend content="/html/body/@dir"   theme="/html/body" />
 
      <!-- Document Content -->
-     <copy content="//*[@id='portal-column-content']/*" theme="//*[@id='document-content']" />
+     <copy content="//*[@id='portal-column-content']/*" theme="//*[@id='page-content']" />
      <drop content="*[@class='documentActions']" />
 
      <copy content="//*[@id='portal-languageselector']/*" theme="//*[@id='languages']" />

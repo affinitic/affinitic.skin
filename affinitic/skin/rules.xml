@@ -19,6 +19,6 @@
      <drop content="*[@class='documentActions']" />
 
      <!-- Page title -->
-     <copy content="//*[@id='content']/h1/*" theme="//*[@id='title']" />
+     <copy content="//h1[@class='documentFirstHeading']/node()" theme="//*[@id='title']" />
 
 </rules>

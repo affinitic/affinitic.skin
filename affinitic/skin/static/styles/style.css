@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  background-image: url("background.png");
+  background-image: url("../images/background.png");
   background-color: #aec5ed;
   color: #FFF;
   font-size: 11pt;
@@ -49,7 +49,7 @@ ul{
 
 .content-top{
   height: 40px;
-  background-image: url("content_top.png");
+  background-image: url("../images/content_top.png");
   background-repeat: no-repeat;
 }
 
@@ -82,57 +82,57 @@ ul{
 .content-table-top-left{
   width: 14px;
   height: 14px;
-  background-image: url("content_table_top_left.png");
+  background-image: url("../images/content_table_top_left.png");
 }
 
 .content-table-top-center{
   width: 719px;
-  background-image: url("content_table_top_center.png");
+  background-image: url("../images/content_table_top_center.png");
 }
 
 .content-table-top-right{
   width: 14px;
   height: 14px;
-  background-image: url("content_table_top_right.png");
+  background-image: url("../images/content_table_top_right.png");
 }
 
 .content-table-middle-left{
-  background-image: url("content_table_middle_left.png");
+  background-image: url("../images/content_table_middle_left.png");
 }
 
 .content-table-middle-right{
-  background-image: url("content_table_middle_right.png");
+  background-image: url("../images/content_table_middle_right.png");
 }
 
 .content-table-bottom-left{
   height: 14px;
-  background-image: url("content_table_bottom_left.png");
+  background-image: url("../images/content_table_bottom_left.png");
 }
 
 .content-table-bottom-center{
-  background-image: url("content_table_bottom_center.png");
+  background-image: url("../images/content_table_bottom_center.png");
 }
 
 .content-table-bottom-right{
-  background-image: url("content_table_bottom_right.png");
+  background-image: url("../images/content_table_bottom_right.png");
 }
 
 .content-bottom-left{
   height: 27px;
   width: 27px;
-  background-image: url("content_bottom_left.png");
+  background-image: url("../images/content_bottom_left.png");
 }
 
 .content-bottom-center{
   background-color: #aec5ed;
   width: 746px;
-  background-image: url("content_bottom_center.png");
+  background-image: url("../images/content_bottom_center.png");
 }
 
 .content-bottom-right{
   height: 27px;
   width: 27px;
-  background-image: url("content_bottom_right.png");
+  background-image: url("../images/content_bottom_right.png");
 }
 
 .footer{
@@ -147,7 +147,7 @@ ul{
 .footer-table-top-left{
   width: 10px;
   height: 10px;
-  background-image: url("footer_table_top_left.png");
+  background-image: url("../images/footer_table_top_left.png");
 }
 
 .footer-table-top-center{
@@ -158,12 +158,12 @@ ul{
 .footer-table-top-right{
   width: 10px;
   height: 10px;
-  background-image: url("footer_table_top_right.png");
+  background-image: url("../images/footer_table_top_right.png");
 }
 
 .footer-table-middle{
   height: 64px;
-  background-image: url("footer_background.png");
+  background-image: url("../images/footer_background.png");
   font-size: 0.6em;
   color: #EEE;
   text-align: center;
@@ -172,7 +172,7 @@ ul{
 .footer-table-bottom-left{
   width: 10px;
   height: 10px;
-  background-image: url("footer_table_bottom_left.png");
+  background-image: url("../images/footer_table_bottom_left.png");
 }
 
 .footer-table-bottom-center{
@@ -182,7 +182,7 @@ ul{
 .footer-table-bottom-right{
   width: 10px;
   height: 10px;
-  background-image: url("footer_table_bottom_right.png");
+  background-image: url("../images/footer_table_bottom_right.png");
 }
 
 .powered{

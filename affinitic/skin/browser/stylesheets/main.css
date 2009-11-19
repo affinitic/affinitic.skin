@@ -19,6 +19,21 @@ border-bottom:1px solid #cee0ff;
 font-weight:normal;
 }
 
+#logo-affinitic{
+position:relative;
+top:-81px;
+left:677px;
+z-index:10;
+width:111px;
+height:111px;
+}
+
+#logo-affinitic a{
+display:block;
+width:111px;
+height:111px;
+}
+
 .documentFirstHeading {
 display: none;
 }

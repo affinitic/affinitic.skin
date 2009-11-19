@@ -1,5 +1,9 @@
 /* Stylesheet for the 'affinitic.skin' Plone theme */
 
+body.smallText {
+font-size:11pt;
+}
+
 .documentFirstHeading {
 display: none;
 }

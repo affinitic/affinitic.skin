@@ -3,10 +3,11 @@ body{
   padding: 0;
   background-image: url("background.png");
   background-color: #aec5ed;
+  font-size:11pt;
   color: #FFF;
-  font-size: 9pt;
   font-family: verdana, arial, helvetica, sans-serif;
 }
+
 
 img{
   border: 0;
@@ -32,7 +33,7 @@ ul{
 }
 
 .site{
-  position: relative;
+  /*position: relative;*/
   width: 800px;
   vertical-align: middle;
   margin: auto;
@@ -136,9 +137,12 @@ ul{
 }
 
 .footer{
+  width:800px;
   height: 143px;
   margin-top: 27px;
   margin-bottom: 22px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .footer-table-top-left{
@@ -161,7 +165,7 @@ ul{
 .footer-table-middle{
   height: 64px;
   background-image: url("footer_background.png");
-  font-size: 0.6em;
+  font-size: 0.8em;
   color: #EEE;
   text-align: center;
 }

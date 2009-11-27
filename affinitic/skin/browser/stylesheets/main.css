@@ -2,21 +2,29 @@
 
 body{
 background-color:#8a9dbd;
-font-size:11pt;
-color:#d3e7f1;
+font-size:12pt;
+color:#fff;              /*#d3e7f1;*/
 }
 
 h1, h2{
-color:#415370;    
+color:#415370;
 }
 
 h3, h4, h5, h6{
-color:#c4d6f9;    
+color:#d6e9ff;
 }
 
 h1, h2 {
 border-bottom:1px solid #cee0ff;
 font-weight:normal;
+}
+
+a{
+color:#b9efff;
+}
+
+legend{
+background-color:transparent;
 }
 
 #logo-affinitic{
@@ -34,6 +42,14 @@ width:111px;
 height:111px;
 }
 
+.title{
+width:625px;
+display:block;
+}
+
+
+
+
 .documentFirstHeading {
 display: none;
 }
@@ -49,7 +65,7 @@ padding:1em 1em 2em !important;
 
 .reference{
 margin-bottom:2em;
-border:1px solid #adbfe1;  
+border:1px solid #adbfe1;
 }
 
 .reference legend{

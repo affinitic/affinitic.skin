@@ -1,10 +1,15 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:cmf="http://namespaces.zope.org/cmf"
     i18n_domain="affinitic.skin">
 
    <include package=".browser" />
+
+   <include package="z3c.jbot" file="meta.zcml" />
+
+   <browser:templateOverrides directory="skins/affinitic_skin_custom_templates" />
 
    <include file="skins.zcml" />
    <include file="profiles.zcml" />

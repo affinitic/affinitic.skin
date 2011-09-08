@@ -2,33 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="style.css" rel="stylesheet" type="text/css"/>
-<link rel="stylesheet" type="text/css" href="overlays.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
 <title>Document sans nom</title>
-<script src="jquery.js" type="text/javascript"></script>
-<script src="jquery.tools.min.js" type="text/javascript"></script>
-<script src="overlayhelpers.js" type="text/javascript"></script>
-<script type="text/javascript">
-    jQuery(document).ready(function($) {
-        $('a.realisation').each(function() {
-            $(this).prepOverlay({
-                width: '870px',
-                subtype:'ajax',
-                filter: '#overlay>*',
-                urlmatch:'#$',
-            	mask: {
-            		color: '#000',
-            	},
-            });
-        
-        });
-    });
-</script>
 </head>
 
 <body>
-
-<span id="test">TEST</span>
 
 <div id="background-affinitic"></div>
 
@@ -36,14 +14,24 @@
 <div id="menu-shadow"></div>
 
 <div id="container">
-    <a href="/">
-    	<img src="affinitic-logo.png" alt="Affinitic" id="logo" />
+    <a href="#">
+    	<img src="images/affinitic-logo.png" alt="Affinitic" id="logo" />
 	</a>
 	<div id="menu-language">
 	    <a href="#">FR</a> - <a href="#">EN</a>
 	</div>
 
-    <div id="main-menu"></div>
+    <div id="main-menu">
+        <a href="index.html">Page d’accueil</a>
+        <a href="realisation.html">Nos réalisations</a>
+        <a href="services.html">Nos services</a>
+        <a href="#">Notre équipe</a>
+        <a href="#">Contactez-nous</a>
+        <div id="research">
+            <input type="text" name="search" value="Rechercher" />
+            <img src="images/icon-search.png" />
+        </div>
+    </div>
     <div class="clear"></div>
 
     <div id="content">
@@ -98,49 +86,11 @@
     <div id="bg-top"></div>
     <div class="content">
         <p>Rue des Canadiens, 248 B-7022 Hyon Belgique - 00 32 65 84 83 28 - 00 32 499 52 92 29</p>
-        <a href="#"><img src="plone-powered.png" /></a>
-        <a href="#"><img src="zope-powered.gif" /></a>
-        <a href="#"><img src="python-powered.gif" /></a>
+        <a href="#"><img src="images/plone-powered.png" /></a>
+        <a href="#"><img src="images/zope-powered.gif" /></a>
+        <a href="#"><img src="images/python-powered.gif" /></a>
     </div>
     <div id="bg-bottom"></div>
-</div>
-
-<div id="our-realisation">
-    <h1 class="documentFirstHeading">
-        Nos réalisations
-    </h1>
-
-    <div id="our-realisation-bg">
-        <div id="bg-top"></div>
-        <div class="content">
-            <a href="#" class="realisation">
-                <img src="images/realisation-homepage.jpg" />
-                <span class="shadow"></span>
-                <span class="description">Centre Scolaire Saint-Exupery</span>
-            </a>
-
-            <a href="#" class="realisation">
-                <img src="images/realisation-homepage.jpg" />
-                <span class="shadow"></span>
-                <span class="description">Centre Scolaire Saint-Exupery</span>
-            </a>
-
-            <a href="#" class="realisation last">
-                <img src="images/realisation-homepage.jpg" />
-                <span class="shadow"></span>
-                <span class="description">Centre Scolaire Saint-Exupery</span>
-            </a>
-        <div class="clear"></div>
-        </div>
-        <div id="bg-bottom"></div>
-    </div>
-</div>
-
-<div id="informations-homepage">
-    <p>Rue des Canadiens, 248 B-7022 Hyon Belgique - 00 32 65 84 83 28 - 00 32 499 52 92 29</p>
-    <a href="#"><img src="images/plone-powered.png" /></a>
-    <a href="#"><img src="images/zope-powered.gif" /></a>
-    <a href="#"><img src="images/python-powered.gif" /></a>
 </div>
 
 </body>

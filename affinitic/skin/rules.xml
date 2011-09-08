@@ -4,9 +4,9 @@
 
     <append  content="/html/head/base"   theme="/html/head" />    
     <append  content="/html/head/meta"   theme="/html/head" />
-    <append  content='/html/head/style'  theme='/html/head' />
     <append  content='/html/head/script' theme='/html/head' />     
     <append  content="/html/head/link"   theme="/html/head" />
+    <prepend  content='/html/head/style'  theme='/html/head' />
 
     <!-- Copy over the id/class attributes on the body tag, this is important
 	     for Kupu and per-section styling -->
@@ -14,11 +14,33 @@
 	<prepend content="/html/body/@id"    theme="/html/body" />	
 	<prepend content="/html/body/@dir"   theme="/html/body" />
 
-     <!-- Document Content -->
-     <copy content="//*[@id='portal-column-content']/*" theme="//*[@id='page-content']" />
-     <drop content="*[@class='documentActions']" />
+    <!-- Language selector -->
+    <copy content="//*[@id='portal-languageselector']/*"
+          theme="//*[@id='menu-language']" />
+
+    <!-- Document Content -->
+    <copy content="//*[@id='content']/*" theme="//*[@id='content']" />
+
+    <prepend content="//*[@id='portaltab-index_html']/*" theme="//*[@id='main-menu']" />
+    <prepend content="//*[@id='portaltab-nos-realisations']/*" theme="//*[@id='main-menu']" />
+    <prepend content="//*[@id='portaltab-notre-equipe']/*" theme="//*[@id='main-menu']" />
+    <prepend content="//*[@id='portaltab-nos-services']/*" theme="//*[@id='main-menu']" />
+    <prepend content="//*[@id='portaltab-contact']/*" theme="//*[@id='main-menu']" />
+
+    <drop theme="//*[@id='our-realisation']" />
+    <drop theme="//*[@id='informations-homepage']" />
+
+
+    <drop theme='//*[@id="test"]' if-content="//body[contains(concat(' ', normalize-space(@class), ' '), ' section-notre-equipe ')]" />
+
+    <rules if-content="//*[contains(concat(' ', normalize-space(@class), ' '), ' section-notre-equipe ')]">
+        <theme href="homepage.html"/>
+        <!-- <drop theme="//*[@id='informations']" />
+        <after content="//*[@id='content']/*" theme="//*[@id='our-realisation']" />
+        <after content="//*[@id='content']/*" theme="//*[@id='informations-homepage']" /> -->
+    </rules>
 
      <!-- Page title -->
-     <copy content="//h1[@class='documentFirstHeading']/node()" theme="//*[@id='title']" />
+     <!-- <copy content="//h1[@class='documentFirstHeading']/node()" theme="//*[@id='title']" /> -->
 
 </rules>

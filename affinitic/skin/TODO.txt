@@ -1,0 +1,4 @@
+ - utiliser plone.app.themingplugins
+ - faire un répertoire static
+ - nettoyer le package
+ - gérer la CSS statique via Plone

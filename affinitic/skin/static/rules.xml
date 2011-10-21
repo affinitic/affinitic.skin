@@ -39,9 +39,6 @@
 
             <replace css:content-children="#portal-globalnav" css:theme-children="#main-menu" />
 
-            <drop theme="//*[@id='our-realisation']" />
-            <drop theme="//*[@id='informations-homepage']" />
-
     </rules>
 
 </rules>

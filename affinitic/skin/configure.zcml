@@ -1,17 +1,17 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
-    xmlns:browser="http://namespaces.zope.org/browser"
-    xmlns:five="http://namespaces.zope.org/five"
     xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="affinitic.skin">
-
-   <include package=".browser" />
 
    <include package="z3c.jbot" file="meta.zcml" />
 
-   <browser:templateOverrides directory="skins/affinitic_skin_custom_templates" />
-
-   <include file="skins.zcml" />
-   <include file="profiles.zcml" />
+   <genericsetup:registerProfile
+         name="default"
+         title="affinitic.skin"
+         directory="profiles/default"
+         description='Extension profile for the "affinitic.skin" Plone theme.'
+         provides="Products.GenericSetup.interfaces.EXTENSION"
+         />
 
 </configure>

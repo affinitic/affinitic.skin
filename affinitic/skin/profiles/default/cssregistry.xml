@@ -2,9 +2,27 @@
 <object name="portal_css">
 
  <stylesheet title=""
-    id="++resource++affinitic.skin.stylesheets/main.css"
-    media="screen" rel="stylesheet" rendering="import"
-    cacheable="True" compression="safe" cookable="True"
-    enabled="1" expression=""/>
-
+    id="++theme++affinitic.skin/css/style.css"
+    media="screen"
+    rel="stylesheet"
+    rendering="link"
+    cacheable="True"
+    compression="safe"
+    cookable="True"
+    enabled="1"
+	applyPrefix="True"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"/>
+    
+    <stylesheet title=""
+        id="++theme++affinitic.skin/css/style.css"
+        media="screen"
+        rel="stylesheet"
+        rendering="link"
+        cacheable="True"
+        compression="safe"
+        cookable="True"
+        enabled="1"
+    	applyPrefix="True"
+        expression="request/HTTP_X_THEME_ENABLED | nothing"/>
+    
 </object>

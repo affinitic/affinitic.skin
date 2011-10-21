@@ -21,7 +21,7 @@ div.overlay-iframe {
 /* default close button positioned on upper-left corner */
 div.overlaybg div.close,
 div.overlay div.close {
-    background-image: url('overlay-close-button.png');
+    background-image: url('../images/overlay-close-button.png');
     position: absolute;
     left: -18px;
     top: -18px;
@@ -36,7 +36,7 @@ div.overlay div.close {
 
 .pb-ajax, .pb-image {
     background-color: #fff;
-    background: #A5BBE1 url('overlay-bg.gif') repeat top left;
+    background: #A5BBE1 url('../images/overlay-bg.gif') repeat top left;
     border: 1px solid #999;
     white-space: normal;
     -moz-border-radius: 12px 12px 12px 12px;

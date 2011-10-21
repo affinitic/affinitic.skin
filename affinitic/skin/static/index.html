@@ -1,147 +1,156 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="style.css" rel="stylesheet" type="text/css"/>
-<link rel="stylesheet" type="text/css" href="overlays.css" />
-<title>Document sans nom</title>
-<script src="jquery.js" type="text/javascript"></script>
-<script src="jquery.tools.min.js" type="text/javascript"></script>
-<script src="overlayhelpers.js" type="text/javascript"></script>
-<script type="text/javascript">
-    jQuery(document).ready(function($) {
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="css/overlays.css" />
+        <title>
+            Document sans nom
+        </title>
+        <script src="js/jquery.js" type="text/javascript">
+</script>
+        <script src="js/jquery.tools.min.js" type="text/javascript">
+</script>
+        <script src="js/overlayhelpers.js" type="text/javascript">
+</script>
+        <script type="text/javascript">
+//<![CDATA[
+        jQuery(document).ready(function($) {
         $('a.realisation').each(function() {
             $(this).prepOverlay({
                 width: '870px',
                 subtype:'ajax',
                 filter: '#overlay>*',
                 urlmatch:'#$',
-            	mask: {
-            		color: '#000',
-            	},
+                mask: {
+                    color: '#000',
+                },
             });
-        
+
         });
-    });
-</script>
-</head>
-
-<body>
-
-<span id="test">TEST</span>
-
-<div id="background-affinitic"></div>
-
-<div id="background-menu"></div>
-<div id="menu-shadow"></div>
-
-<div id="container">
-    <a href="/">
-    	<img src="affinitic-logo.png" alt="Affinitic" id="logo" />
-	</a>
-	<div id="menu-language">
-	    <a href="#">FR</a> - <a href="#">EN</a>
-	</div>
-
-    <div id="main-menu"></div>
-    <div class="clear"></div>
-
-    <div id="content">
-        <h1 class="title">
-            Nos services
-        </h1>
-
-        <h2>Développement</h2>
-        <p>Python</p>
-        <ul>
-            <li>Database adapter for Oracle, Postgresql, Mysql, MSSQL, SQLite  and object relational mapper</li>
-            <li>Central authentication with LDAP</li>
-            <li><a href="#">XML processing</a></li>
-            <li>Documentation generation</li>
-            <li>Continuous integration</li>
-            <li>Functional and load testing</li>
-            <li>Application deployment</li>
-            <li>Version control</li>
-            <li>Generation of rich documents (PDF, OpenDocument)</li>
-            <li>Project management and ticketing system</li>
-            <li>SOAP integration</li>
-            <li>Zope</li>
-            <li>Plone</li>
-        </ul>
-
-        <h2>Hébergement</h2>
-        <p>Nous hébergeons nos applications Web sur des serveurs dédiés GNU Linux. Nous en réalisations l'administration et le monitoring permanent.</p>
-        <ul>
-            <li>mailing lists</li>
-            <li>awstat</li>
-            <li>load balancing</li>
-            <li>reverse proxy</li>
-            <li>trac</li>
-            <li>caching</li>
-            <li>subversion / mercurial</li>
-            <li>bases de données</li>
-            <li>virtualisation / chroot</li>
-        </ul>
-
-        <h2>Formations</h2>
-        <p>Nous organisons des conférences et des formations sur Python / Zope / Plone / Flash à destination :</p>
-        <ul>
-            <li>des développeurs</li>
-            <li>des intégrateurs</li>
-            <li>des utilisateurs finaux</li>
-        </ul>
-
-    </div>
-</div>
-
-<div id="informations">
-    <div id="bg-top"></div>
-    <div class="content">
-        <p>Rue des Canadiens, 248 B-7022 Hyon Belgique - 00 32 65 84 83 28 - 00 32 499 52 92 29</p>
-        <a href="#"><img src="plone-powered.png" /></a>
-        <a href="#"><img src="zope-powered.gif" /></a>
-        <a href="#"><img src="python-powered.gif" /></a>
-    </div>
-    <div id="bg-bottom"></div>
-</div>
-
-<div id="our-realisation">
-    <h1 class="documentFirstHeading">
-        Nos réalisations
-    </h1>
-
-    <div id="our-realisation-bg">
-        <div id="bg-top"></div>
-        <div class="content">
-            <a href="#" class="realisation">
-                <img src="images/realisation-homepage.jpg" />
-                <span class="shadow"></span>
-                <span class="description">Centre Scolaire Saint-Exupery</span>
-            </a>
-
-            <a href="#" class="realisation">
-                <img src="images/realisation-homepage.jpg" />
-                <span class="shadow"></span>
-                <span class="description">Centre Scolaire Saint-Exupery</span>
-            </a>
-
-            <a href="#" class="realisation last">
-                <img src="images/realisation-homepage.jpg" />
-                <span class="shadow"></span>
-                <span class="description">Centre Scolaire Saint-Exupery</span>
-            </a>
-        <div class="clear"></div>
+        });
+        //]]>
+        </script>
+    </head>
+    <body>
+        <div id="background-affinitic"></div>
+        <div id="background-menu"></div>
+        <div id="menu-shadow"></div>
+        <div id="container">
+            <a href="/"><img src="images/affinitic-logo.png" alt="Affinitic" id="logo" /></a>
+            <div id="menu-language">
+                <a href="#">FR</a> - <a href="#">EN</a>
+            </div>
+            <div id="main-menu"></div>
+            <div class="clear"></div>
+            <div id="content">
+                <h1 class="title">
+                    Nos services
+                </h1>
+                <h2>
+                    Développement
+                </h2>
+                <p>
+                    Python
+                </p>
+                <ul>
+                    <li>Database adapter for Oracle, Postgresql, Mysql, MSSQL, SQLite and object relational mapper
+                    </li>
+                    <li>Central authentication with LDAP
+                    </li>
+                    <li>
+                        <a href="#">XML processing</a>
+                    </li>
+                    <li>Documentation generation
+                    </li>
+                    <li>Continuous integration
+                    </li>
+                    <li>Functional and load testing
+                    </li>
+                    <li>Application deployment
+                    </li>
+                    <li>Version control
+                    </li>
+                    <li>Generation of rich documents (PDF, OpenDocument)
+                    </li>
+                    <li>Project management and ticketing system
+                    </li>
+                    <li>SOAP integration
+                    </li>
+                    <li>Zope
+                    </li>
+                    <li>Plone
+                    </li>
+                </ul>
+                <h2>
+                    Hébergement
+                </h2>
+                <p>
+                    Nous hébergeons nos applications Web sur des serveurs dédiés GNU Linux. Nous en réalisations l'administration et le monitoring permanent.
+                </p>
+                <ul>
+                    <li>mailing lists
+                    </li>
+                    <li>awstat
+                    </li>
+                    <li>load balancing
+                    </li>
+                    <li>reverse proxy
+                    </li>
+                    <li>trac
+                    </li>
+                    <li>caching
+                    </li>
+                    <li>subversion / mercurial
+                    </li>
+                    <li>bases de données
+                    </li>
+                    <li>virtualisation / chroot
+                    </li>
+                </ul>
+                <h2>
+                    Formations
+                </h2>
+                <p>
+                    Nous organisons des conférences et des formations sur Python / Zope / Plone / Flash à destination :
+                </p>
+                <ul>
+                    <li>des développeurs
+                    </li>
+                    <li>des intégrateurs
+                    </li>
+                    <li>des utilisateurs finaux
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div id="bg-bottom"></div>
-    </div>
-</div>
-
-<div id="informations-homepage">
-    <p>Rue des Canadiens, 248 B-7022 Hyon Belgique - 00 32 65 84 83 28 - 00 32 499 52 92 29</p>
-    <a href="#"><img src="images/plone-powered.png" /></a>
-    <a href="#"><img src="images/zope-powered.gif" /></a>
-    <a href="#"><img src="images/python-powered.gif" /></a>
-</div>
-
-</body>
+        <div id="informations">
+            <div id="bg-top"></div>
+            <div class="content">
+                <p>
+                    Rue des Canadiens, 248 B-7022 Hyon Belgique - 00 32 65 84 83 28 - 00 32 499 52 92 29
+                </p><a href="#"><img src="images/plone-powered.png" /></a> <a href="#"><img src="images/zope-powered.gif" /></a> <a href="#"><img src="images/python-powered.gif" /></a>
+            </div>
+            <div id="bg-bottom"></div>
+        </div>
+        <div id="our-realisation">
+            <h1 class="documentFirstHeading">
+                Nos réalisations
+            </h1>
+            <div id="our-realisation-bg">
+                <div id="bg-top"></div>
+                <div class="content">
+                    <a href="#" class="realisation"><img src="images/realisation-homepage.jpg" /> <span class="description">Centre Scolaire Saint-Exupery</span></a> <a href="#" class="realisation"><img src="images/realisation-homepage.jpg" /> <span class="description">Centre Scolaire Saint-Exupery</span></a> <a href="#" class="realisation last"><img src="images/realisation-homepage.jpg" /> <span class="description">Centre Scolaire Saint-Exupery</span></a>
+                    <div class="clear"></div>
+                </div>
+                <div id="bg-bottom"></div>
+            </div>
+        </div>
+        <div id="informations-homepage">
+            <p>
+                Rue des Canadiens, 248 B-7022 Hyon Belgique - 00 32 65 84 83 28 - 00 32 499 52 92 29
+            </p><a href="#"><img src="images/plone-powered.png" /></a> <a href="#"><img src="images/zope-powered.gif" /></a> <a href="#"><img src="images/python-powered.gif" /></a>
+        </div>
+    </body>
 </html>

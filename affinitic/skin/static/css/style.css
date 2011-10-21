@@ -38,7 +38,7 @@ abbr,acronym { border:0;
 /*****************/
 
 body {
-	background: #FFF url('body-bg.gif') repeat;
+	background: #FFF url('../images/body-bg.gif') repeat;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #5C6A87;
 	font-size: 14px;
@@ -48,7 +48,7 @@ body {
 	width: 920px;
 	height: 778px;
 	margin: auto;
-	background: transparent url('affinitic-bg.png') no-repeat top center;
+	background: transparent url('../images/affinitic-bg.png') no-repeat top center;
 }
 
 #background-menu {
@@ -62,7 +62,7 @@ body {
 #menu-shadow {
 	width: 100%;
 	height: 4px;
-	background: transparent url('menu-shadow-bg.png') repeat-x;
+	background: transparent url('../images/menu-shadow-bg.png') repeat-x;
 }
 
 #container {
@@ -123,7 +123,7 @@ body {
 }
 
 #main-menu a:hover {
-    background: transparent url('menu-pointer.gif') no-repeat bottom center;
+    background: transparent url('../images/menu-pointer.gif') no-repeat bottom center;
 }
 
 #main-menu div#research {
@@ -139,7 +139,7 @@ body {
     padding: 1px 4px;
     width: 122px;
     height: 13px;
-    background: #FFF url('input-bg.gif') repeat-x top left;
+    background: #FFF url('../images/input-bg.gif') repeat-x top left;
 }
 
 #main-menu div#research img {
@@ -189,7 +189,7 @@ ul, ol { margin-left: 20px; }
 li {
     margin: 1px 0 4px 0;
     padding: 0 0 0 12px;
-    background: transparent url('puce-4x4-blue.gif') no-repeat left 0.6em;
+    background: transparent url('../images/puce-4x4-blue.gif') no-repeat left 0.6em;
 }
 
 li ul li {
@@ -231,10 +231,10 @@ strong { font-weight: bold; }
 
 #informations #bg-top, #informations #bg-bottom, div#our-realisation #our-realisation-bg #bg-top, div#our-realisation #our-realisation-bg #bg-bottom {
     height: 15px;
-    background: transparent url('bottom-bg-top.gif') repeat-x top left;
+    background: transparent url('../images/bottom-bg-top.gif') repeat-x top left;
 }
 
-#informations #bg-bottom, div#our-realisation #our-realisation-bg #bg-bottom { background: transparent url('bottom-bg-bottom.gif') repeat-x top left; }
+#informations #bg-bottom, div#our-realisation #our-realisation-bg #bg-bottom { background: transparent url('../images/bottom-bg-bottom.gif') repeat-x top left; }
 
 /* Homepage */
 /************/
@@ -263,10 +263,10 @@ div#our-realisation h1.documentFirstHeading {
 
 div#our-realisation #our-realisation-bg #bg-top, div#our-realisation #our-realisation-bg #bg-bottom {
     height: 15px;
-    background: transparent url('bottom-bg-top.gif') repeat-x top left;
+    background: transparent url('../images/bottom-bg-top.gif') repeat-x top left;
 }
 
-div#our-realisation #our-realisation-bg #bg-bottom { background: transparent url('bottom-bg-bottom.gif') repeat-x top left; }
+div#our-realisation #our-realisation-bg #bg-bottom { background: transparent url('../images/bottom-bg-bottom.gif') repeat-x top left; }
 
 div#our-realisation #our-realisation-bg .content {
     position: relative;
@@ -303,7 +303,7 @@ div#our-realisation .realisation .shadow, .realisation .shadow {
     height: 161px;
     top: 0px;
     left: 0px;
-    background: transparent url('shadow-realisation-homepage.png') no-repeat top left;
+    background: transparent url('../images/shadow-realisation-homepage.png') no-repeat top left;
 }
 
 div#our-realisation .realisation .description, .realisation .description {
@@ -337,7 +337,7 @@ div#our-realisation .realisation .description, .realisation .description {
 
 #content .realisation .shadow {
     height: 111px;
-    background: transparent url('shadow-realisation.png') no-repeat top left;
+    background: transparent url('../images/shadow-realisation.png') no-repeat top left;
 }
 
 #content .realisation .description {
@@ -348,7 +348,7 @@ div#our-realisation .realisation .description, .realisation .description {
     padding: 5px;
     left: 0px;
     bottom: 0px;
-    background: transparent url('realisation-hover-bg.png') no-repeat bottom left;
+    background: transparent url('../images/realisation-hover-bg.png') no-repeat bottom left;
     color: #FFF;
 }
 
@@ -393,7 +393,7 @@ div#our-realisation .realisation .description, .realisation .description {
 #overlay li {
     margin: 1px 0 4px 20px;
     padding: 0 0 0 12px;
-    background: transparent url('puce-4x4-lightblue.gif') no-repeat left 0.6em;
+    background: transparent url('../images/puce-4x4-lightblue.gif') no-repeat left 0.6em;
 }
 
 /* Plone */

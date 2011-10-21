@@ -1,4 +1,10 @@
-<rules xmlns="http://openplans.org/deliverance">
+<?xml version="1.0" encoding="UTF-8"?>
+<rules 
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <theme href="index.html" />
 
  	<replace content='/html/head/title' theme='/html/head/title' />
 
@@ -33,12 +39,12 @@
 
     <drop theme='//*[@id="test"]' if-content="//body[contains(concat(' ', normalize-space(@class), ' '), ' section-notre-equipe ')]" />
 
-    <rules if-content="//*[contains(concat(' ', normalize-space(@class), ' '), ' section-notre-equipe ')]">
-        <theme href="homepage.html"/>
+   <!-- <rules if-content="//*[contains(concat(' ', normalize-space(@class), ' '), ' section-notre-equipe ')]">
+        <theme href="homepage.html"/>-->
         <!-- <drop theme="//*[@id='informations']" />
         <after content="//*[@id='content']/*" theme="//*[@id='our-realisation']" />
         <after content="//*[@id='content']/*" theme="//*[@id='informations-homepage']" /> -->
-    </rules>
+        <!--    </rules>-->
 
      <!-- Page title -->
      <!-- <copy content="//h1[@class='documentFirstHeading']/node()" theme="//*[@id='title']" /> -->

@@ -14,7 +14,7 @@
         expression="request/HTTP_X_THEME_ENABLED | nothing"/>
     
     <stylesheet title=""
-        id="++theme++affinitic.skin/css/style.css"
+        id="++theme++affinitic.skin/css/overlays.css"
         media="screen"
         rel="stylesheet"
         rendering="link"

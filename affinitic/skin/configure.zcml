@@ -1,6 +1,6 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
-    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:plone="http://namespaces.plone.org/plone"    
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="affinitic.skin">
 
@@ -13,5 +13,6 @@
          description='Extension profile for the "affinitic.skin" Plone theme.'
          provides="Products.GenericSetup.interfaces.EXTENSION"
          />
-
+   <plone:static type="theme" directory="static" />
+   
 </configure>

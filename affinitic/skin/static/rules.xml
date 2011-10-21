@@ -28,6 +28,8 @@
                  for per-section styling -->
             <copy attributes="class id dir" content="/html/body" theme="/html/body" />
 
+            <copy attributes="href" css:content="#portal-logo" css:theme="#logo-link" />
+
             <!-- Language selector -->
             <copy content="//*[@id='portal-languageselector']/*"
                   theme="//*[@id='menu-language']" />

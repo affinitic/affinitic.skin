@@ -8,10 +8,6 @@
 
             <theme href="index.html" />
 
-            <!-- Copy standard header tags, including base (very important for
-                 Plone default pages to work correctly), meta, title and
-                 style sheets/scripts, in the order they appear in the content.
-             -->
             <drop theme="/html/head/meta" />
             <drop theme="/html/head/title" />
             <drop theme="/html/head/base" />
@@ -39,17 +35,11 @@
             <!-- Document Content -->
             <copy content="//*[@id='content']/*" theme="//*[@id='content']" />
 
-            <prepend content="//*[@id='portaltab-index_html']/*" theme="//*[@id='main-menu']" />
-            <prepend content="//*[@id='portaltab-nos-realisations']/*" theme="//*[@id='main-menu']" />
-            <prepend content="//*[@id='portaltab-notre-equipe']/*" theme="//*[@id='main-menu']" />
-            <prepend content="//*[@id='portaltab-nos-services']/*" theme="//*[@id='main-menu']" />
-            <prepend content="//*[@id='portaltab-contact']/*" theme="//*[@id='main-menu']" />
+            <replace css:content-children="#portal-globalnav" css:theme-children="#main-menu" />
 
             <drop theme="//*[@id='our-realisation']" />
             <drop theme="//*[@id='informations-homepage']" />
 
-
-            <drop theme='//*[@id="test"]' if-content="//body[contains(concat(' ', normalize-space(@class), ' '), ' section-notre-equipe ')]" />
     </rules>
 
 </rules>

@@ -111,6 +111,10 @@ background: none;
 #main-menu a:hover {
 background: transparent url('../images/menu-pointer.gif') no-repeat bottom center;
 }
+#main-menu li.selected a {
+color: #6E050D;
+background: transparent url('../images/menu-pointer-selected.gif') no-repeat bottom center;
+}
 #main-menu div#research {
 position: absolute;
 top: 3px;

@@ -4,49 +4,52 @@
     xmlns:css="http://namespaces.plone.org/diazo/css"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <theme href="index.html" />
+    <rules css:if-content="#visual-portal-wrapper">
 
- 	<replace content='/html/head/title' theme='/html/head/title' />
+            <theme href="index.html" />
 
-    <append  content="/html/head/base"   theme="/html/head" />    
-    <append  content="/html/head/meta"   theme="/html/head" />
-    <append  content='/html/head/script' theme='/html/head' />     
-    <append  content="/html/head/link"   theme="/html/head" />
-    <prepend  content='/html/head/style'  theme='/html/head' />
+            <!-- Copy standard header tags, including base (very important for
+                 Plone default pages to work correctly), meta, title and
+                 style sheets/scripts, in the order they appear in the content.
+             -->
+            <drop theme="/html/head/meta" />
+            <drop theme="/html/head/title" />
+            <drop theme="/html/head/base" />
+            <drop theme="/html/head/style" />
+            <drop theme="/html/head/script" />
+            <drop theme="/html/head/link" />
+            <drop theme="/html/head/comment()" />
 
-    <!-- Copy over the id/class attributes on the body tag, this is important
-	     for Kupu and per-section styling -->
-	<prepend content="/html/body/@class" theme="/html/body" />
-	<prepend content="/html/body/@id"    theme="/html/body" />	
-	<prepend content="/html/body/@dir"   theme="/html/body" />
+            <after content="/html/head/meta" theme-children="/html/head" />
+            <after content="/html/head/title" theme-children="/html/head" />
 
-    <!-- Language selector -->
-    <copy content="//*[@id='portal-languageselector']/*"
-          theme="//*[@id='menu-language']" />
+            <after
+                content="/html/head/base | /html/head/style | /html/head/script | /html/head/link | /html/head/comment()"
+                theme-children="/html/head"
+                />
 
-    <!-- Document Content -->
-    <copy content="//*[@id='content']/*" theme="//*[@id='content']" />
+            <!-- Copy over the id/class attributes on the body tag. This is important
+                 for per-section styling -->
+            <copy attributes="class id dir" content="/html/body" theme="/html/body" />
 
-    <prepend content="//*[@id='portaltab-index_html']/*" theme="//*[@id='main-menu']" />
-    <prepend content="//*[@id='portaltab-nos-realisations']/*" theme="//*[@id='main-menu']" />
-    <prepend content="//*[@id='portaltab-notre-equipe']/*" theme="//*[@id='main-menu']" />
-    <prepend content="//*[@id='portaltab-nos-services']/*" theme="//*[@id='main-menu']" />
-    <prepend content="//*[@id='portaltab-contact']/*" theme="//*[@id='main-menu']" />
+            <!-- Language selector -->
+            <copy content="//*[@id='portal-languageselector']/*"
+                  theme="//*[@id='menu-language']" />
 
-    <drop theme="//*[@id='our-realisation']" />
-    <drop theme="//*[@id='informations-homepage']" />
+            <!-- Document Content -->
+            <copy content="//*[@id='content']/*" theme="//*[@id='content']" />
+
+            <prepend content="//*[@id='portaltab-index_html']/*" theme="//*[@id='main-menu']" />
+            <prepend content="//*[@id='portaltab-nos-realisations']/*" theme="//*[@id='main-menu']" />
+            <prepend content="//*[@id='portaltab-notre-equipe']/*" theme="//*[@id='main-menu']" />
+            <prepend content="//*[@id='portaltab-nos-services']/*" theme="//*[@id='main-menu']" />
+            <prepend content="//*[@id='portaltab-contact']/*" theme="//*[@id='main-menu']" />
+
+            <drop theme="//*[@id='our-realisation']" />
+            <drop theme="//*[@id='informations-homepage']" />
 
 
-    <drop theme='//*[@id="test"]' if-content="//body[contains(concat(' ', normalize-space(@class), ' '), ' section-notre-equipe ')]" />
-
-   <!-- <rules if-content="//*[contains(concat(' ', normalize-space(@class), ' '), ' section-notre-equipe ')]">
-        <theme href="homepage.html"/>-->
-        <!-- <drop theme="//*[@id='informations']" />
-        <after content="//*[@id='content']/*" theme="//*[@id='our-realisation']" />
-        <after content="//*[@id='content']/*" theme="//*[@id='informations-homepage']" /> -->
-        <!--    </rules>-->
-
-     <!-- Page title -->
-     <!-- <copy content="//h1[@class='documentFirstHeading']/node()" theme="//*[@id='title']" /> -->
+            <drop theme='//*[@id="test"]' if-content="//body[contains(concat(' ', normalize-space(@class), ' '), ' section-notre-equipe ')]" />
+    </rules>
 
 </rules>

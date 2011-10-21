@@ -4,8 +4,6 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="affinitic.skin">
 
-   <include package="z3c.jbot" file="meta.zcml" />
-
    <genericsetup:registerProfile
          name="default"
          title="affinitic.skin"
@@ -13,6 +11,7 @@
          description='Extension profile for the "affinitic.skin" Plone theme.'
          provides="Products.GenericSetup.interfaces.EXTENSION"
          />
+
    <plone:static type="theme" directory="static" />
    
 </configure>

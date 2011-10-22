@@ -1,3 +1,3 @@
- - transformer les blobs
  - terminer la homepage
+ - fixer les problèmes de traduction (home page) et les textes manquants
  - peaufiner les styles (textes, etc)

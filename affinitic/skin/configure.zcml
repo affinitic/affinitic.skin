@@ -6,9 +6,9 @@
 
    <genericsetup:registerProfile
          name="default"
-         title="affinitic.skin"
+         title="Affinitic Skin"
          directory="profiles/default"
-         description='Extension profile for the "affinitic.skin" Plone theme.'
+         description='Affinitic website Diazo theme'
          provides="Products.GenericSetup.interfaces.EXTENSION"
          />
 

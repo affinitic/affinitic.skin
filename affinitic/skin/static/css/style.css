@@ -113,7 +113,7 @@ background: transparent url('../images/menu-pointer.gif') no-repeat bottom cente
 }
 #main-menu li.selected a {
 color: #6E050D;
-text-shadow: 1px 1px 1px #E0E0E0;
+text-shadow: 1px 1px 4px #FFFFFF;
 background: transparent url('../images/menu-pointer-selected.gif') no-repeat bottom center;
 }
 #main-menu div#research {

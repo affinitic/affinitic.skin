@@ -113,6 +113,7 @@ background: transparent url('../images/menu-pointer.gif') no-repeat bottom cente
 }
 #main-menu li.selected a {
 color: #6E050D;
+text-shadow: 1px 1px 1px #E0E0E0;
 background: transparent url('../images/menu-pointer-selected.gif') no-repeat bottom center;
 }
 #main-menu div#research {
@@ -159,6 +160,17 @@ margin: 1.2em 0 0.4em;
 border: none;
 }
 
+h3 {
+color: #8A9ABC;
+font-size: 15px;
+font-weight: bold;
+margin: 1.2em 0 0.4em;
+}
+
+#content {
+font-size: 90%;
+}
+
 #content img.border {
 border: 1px solid #8A9ABC;
 }
@@ -178,7 +190,7 @@ color: #36435D;
 ul,ol {
 margin-left: 20px;
 }
-li {
+ul li {
 margin: 1px 0 4px 0;
 padding: 0 0 0 12px;
 background: transparent url('../images/puce-4x4-blue.gif') no-repeat left 0.6em;
@@ -306,7 +318,7 @@ width: 286px;
 height: 111px;
 float: left;
 text-decoration: none;
-margin: 0 12px 12px 0;
+margin: 0 5px 12px 0;
 border: 1px solid #8A9ABC;
 border-bottom: 1px solid #8A9ABC;
 }
@@ -319,6 +331,9 @@ background: transparent url('../images/shadow-realisation.png') no-repeat top le
 }
 /*Override plone css */
 #content ul {list-style :none;
+}
+#content ol {
+    margin-left: 3em;
 }
 #content .realisation .description {
 position: absolute;
@@ -337,6 +352,21 @@ display: block;
 #content a.realisation img {
 border: none;
 }
+td.texte-reference {
+padding-left: 20px;
+}
+.texte-reference h3 {
+margin-top:0px;
+}
+.texte-reference div ul li {
+display: block;
+}
+fieldset.reference table {
+margin-top:15px;
+}
+fieldset.reference {
+}
+
 /* Overlay */
 /***********/
 #overlay {

@@ -26,6 +26,7 @@ setup(name='affinitic.skin',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
-      # -*- Entry points: -*-
+          [z3c.autoinclude.plugin]
+          target = plone
       """,
       )

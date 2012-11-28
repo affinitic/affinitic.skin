@@ -1,0 +1,13 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    i18n_domain="affinitic.skin">
+
+   <cmf:registerDirectory
+        name="affinitic_images"/>
+   <cmf:registerDirectory
+        name="affinitic_templates"/>
+   <cmf:registerDirectory
+        name="affinitic_styles"/>
+
+</configure>

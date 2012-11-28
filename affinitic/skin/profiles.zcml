@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="affinitic.skin">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Affinitic skin"
+      directory="profiles/default"
+      description='Extension profile for the "Affinitic skin" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>

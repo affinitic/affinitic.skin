@@ -63,9 +63,7 @@ transition:all 0.5s ease-in;
 
 #menu-sup li a:hover{
 color:#111;
-
 background-color:rgba(140,51,16,0.28);
-
 }
 
 #logo{
@@ -110,3 +108,10 @@ background-color:transparent;
 .break-float{
 clear:both;
 }
+
+#content h1.documentFirstHeading {
+margin-top: 0;
+color:rgba(140,51,16,0.28);
+border-bottom:1px dotted #ddd;
+}
+

@@ -77,13 +77,10 @@ margin-left:50px;
 margin-top:10px;
 }
 
-#content-text,
-#content-image{
-width:390px;
-}
 
 #content-text{
 float:left;
+width:490px;
 height:500px;
 margin-top:20px;
 overflow:auto;
@@ -91,6 +88,7 @@ margin-left:5px;
 }
 
 #content-image{
+width:390px;
 margin-top:-150px;
 /*background-color:rgba(126,114,91,0.5);*/
 float:right;

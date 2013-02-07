@@ -16,18 +16,7 @@ jQuery(function($){
 		        {image : 'bg_body_05.jpg'},
 		        {image : 'bg_body_06.jpg'},
 		        {image : 'bg_body_07.jpg'},
-		        {image : 'bg_body_09.jpg'},
-		        {image : 'bg_body_10.jpg'},
-		        {image : 'bg_body_11.jpg'},
-		        {image : 'bg_body_12.jpg'},
-		        {image : 'bg_body_13.jpg'},
-		        {image : 'bg_body_14.jpg'},
-		        {image : 'bg_body_15.jpg'},
-		        {image : 'bg_body_16.jpg'},
-		        {image : 'bg_body_17.jpg'},
-		        {image : 'bg_body_18.jpg'},
-		        {image : 'bg_body_19.jpg'},
-		        {image : 'bg_body_21.jpg'}
+		        {image : 'bg_body_08.jpg'}
 		        ]
 		});
 	});

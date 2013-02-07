@@ -7,21 +7,19 @@ color:#999;
 #wrapper{
 }
 
-#main-content{
+#boiteSite{
 width:1000px;
 height:740px;
 /*border-radius:0px 30px 5px 25px;*/
 margin:auto;
 margin-top:30px;
-background-color:rgba(255,255,255,0.89);
+
 }
 
 
 #menu-sup{
-border:1px solid #ddd;
-/*border-radius:0px 80px 0px 0px;*/
-/*background-color:rgba(180,180,180,0.5);*/
-/*height:50px;*/
+border-bottom:1px solid #ddd;
+background-color:transparent;
 }
 
 #menu-sup li{
@@ -31,6 +29,8 @@ border:1px solid #ddd;
 display:inline-block;
 height:30px;
 width:120px;
+background-color:#fff;
+
 line-height:30px;
 text-align:center;
 border-left:1px solid #d7dada;
@@ -38,6 +38,7 @@ border-right:1px solid #d7dada;
 font-size:0.8em;
 color:#555;
 text-shadow:1px 1px 1px rgba(255, 255, 255, 1);
+/*
 background:-moz-linear-gradient(top,  rgba(245,246,246,0.33) 0%, rgba(219,220,226,0.34) 21%, rgba(184,186,198,0.35) 49%, rgba(221,223,227,0.36) 80%, rgba(245,246,246,0.36) 100%);
 background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,0.33)), color-stop(21%,rgba(219,220,226,0.34)), color-stop(49%,rgba(184,186,198,0.35)), color-stop(80%,rgba(221,223,227,0.36)), color-stop(100%,rgba(245,246,246,0.36)));
 background:-webkit-linear-gradient(top,  rgba(245,246,246,0.33) 0%,rgba(219,220,226,0.34) 21%,rgba(184,186,198,0.35) 49%,rgba(221,223,227,0.36) 80%,rgba(245,246,246,0.36) 100%);
@@ -51,11 +52,16 @@ transition:all 0.5s ease-in;
 -o-transition:all 0.5s ease-in;
 -webkit-transition:all 0.5s ease-in;
 -ms-transition:all 0.5s ease-in;
+*/
 }
 
 #menu-sup li a:hover{
 color:#111;
-background-color:rgba(140,51,16,0.28);
+background-color:rgba(200,200,200,0.9);
+}
+
+#content-main{
+background-color:rgba(255,255,255,0.95);
 }
 
 #logo{
@@ -63,8 +69,8 @@ width:150px;
 height:150px;
 background-image:url(images/affinitic_logo.png);
 background-repeat:no-repeat;
-margin-left:50px;
-margin-top:10px;
+margin-left:10px;
+margin-top:0px;
 }
 
 
@@ -72,25 +78,25 @@ margin-top:10px;
 float:left;
 width:580px;
 height:500px;
-margin-top:20px;
 overflow:auto;
 margin-left:5px;
 }
 
 #content-image{
 width:390px;
-margin-top:-150px;
+margin-top:-152px;
 /*background-color:rgba(126,114,91,0.5);*/
 float:right;
 min-height:685px;
-margin-right:3px;
+margin-right:-17px;
 }
 
 #footer{
 margin-top:20px;
 border-radius:12px;
-background-color:rgba(100,100,100,0.7);
+background-color:rgba(200,200,200,0.8);
 height:150px;
+color:#000;
 }
 
 #portal-footer{

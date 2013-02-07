@@ -1,7 +1,32 @@
+@font-face {
+    font-family: 'UbuntuTitle';
+    src: url('./font/ubuntu-title-webfont.eot');
+    src: url('./font/ubuntu-title-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./font/ubuntu-title-webfont.woff') format('woff'),
+         url('./font/ubuntu-title-webfont.ttf') format('truetype'),
+         url('./font/ubuntu-title-webfont.svg#Ubuntu-TitleTitle') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NobileRegular';
+    src: url('./font/nobile-webfont.eot');
+    src: url('./font/nobile-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./font/nobile-webfont.woff') format('woff'),
+         url('./font/nobile-webfont.ttf') format('truetype'),
+         url('./font/nobile-webfont.svg#NobileRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 body{
 margin:0;
 background-color:#333333;
 color:#999;
+font-family:sans-serif;
 }
 
 #wrapper{
@@ -27,68 +52,76 @@ background-color:transparent;
 
 #menu-sup li a{
 display:inline-block;
-height:30px;
-width:120px;
+height:33px;
 background-color:#fff;
-
-line-height:30px;
+line-height:33px;
+padding:0px 17px;
 text-align:center;
 border-left:1px solid #d7dada;
 border-right:1px solid #d7dada;
-font-size:0.8em;
-color:#555;
-text-shadow:1px 1px 1px rgba(255, 255, 255, 1);
-/*
-background:-moz-linear-gradient(top,  rgba(245,246,246,0.33) 0%, rgba(219,220,226,0.34) 21%, rgba(184,186,198,0.35) 49%, rgba(221,223,227,0.36) 80%, rgba(245,246,246,0.36) 100%);
-background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,0.33)), color-stop(21%,rgba(219,220,226,0.34)), color-stop(49%,rgba(184,186,198,0.35)), color-stop(80%,rgba(221,223,227,0.36)), color-stop(100%,rgba(245,246,246,0.36)));
-background:-webkit-linear-gradient(top,  rgba(245,246,246,0.33) 0%,rgba(219,220,226,0.34) 21%,rgba(184,186,198,0.35) 49%,rgba(221,223,227,0.36) 80%,rgba(245,246,246,0.36) 100%);
-background:-o-linear-gradient(top,  rgba(245,246,246,0.33) 0%,rgba(219,220,226,0.34) 21%,rgba(184,186,198,0.35) 49%,rgba(221,223,227,0.36) 80%,rgba(245,246,246,0.36) 100%);
-background:-ms-linear-gradient(top,  rgba(245,246,246,0.33) 0%,rgba(219,220,226,0.34) 21%,rgba(184,186,198,0.35) 49%,rgba(221,223,227,0.36) 80%,rgba(245,246,246,0.36) 100%);
-background:linear-gradient(to bottom,  rgba(245,246,246,0.33) 0%,rgba(219,220,226,0.34) 21%,rgba(184,186,198,0.35) 49%,rgba(221,223,227,0.36) 80%,rgba(245,246,246,0.36) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54f5f6f6', endColorstr='#5cf5f6f6',GradientType=0 );
-transition:all 0.5s ease-in;
-transition:all 0.5s ease-in;
--moz-transition:all 0.5s ease-in;
--o-transition:all 0.5s ease-in;
--webkit-transition:all 0.5s ease-in;
--ms-transition:all 0.5s ease-in;
-*/
+font-family:arial;
+font-size:13px;
+color:#ccc;
+transition: background-color 0.4s ease-in-out 0s;
 }
 
 #menu-sup li a:hover{
-color:#111;
-background-color:rgba(200,200,200,0.9);
+color:#929292;
 }
 
 #content-main{
 background-color:rgba(255,255,255,0.95);
 }
 
+#logo-societe{
+border-bottom:1px dotted #aaa;
+width:615px;
+margin-bottom:5px;
+}
+
 #logo{
-width:150px;
-height:150px;
-background-image:url(images/affinitic_logo.png);
+width:165px;
+height:165px;
+background-image:url(images/affinitic_logo_rond.png);
 background-repeat:no-repeat;
 margin-left:10px;
 margin-top:0px;
+float:left;
+}
+
+#societe{
+width:320px;
+height:165px;
+margin-right:10px;
+margin-top:0px;
+text-align:right;
+float:right;
+color: #7E725B;
+font-family: "NobileRegular";
+font-size: 72px;
+font-weight: bold;
+letter-spacing: -8px;
+line-height:165px;
+opacity: 1;
+text-shadow:1px 1px 3px rgba(100, 100, 100, 0.7);
 }
 
 
 #content-text{
 float:left;
-width:580px;
+width:585px;
 height:500px;
 overflow:auto;
 margin-left:5px;
+padding:0px 12px;
 }
 
 #content-image{
 width:390px;
-margin-top:-152px;
-/*background-color:rgba(126,114,91,0.5);*/
+margin-top:-172px;
 float:right;
 min-height:685px;
-margin-right:-17px;
+margin-right:-19px;
 }
 
 #footer{
@@ -114,7 +147,7 @@ line-height: 1.5em;
 }
 
 #content h1.documentFirstHeading {
-font:2em "NobileRegular", "Helvetica Neue",Arial,FreeSans,sans-serif;
+font:30px "NobileRegular";
 margin-top: 0;
 color:#7e725b;
 letter-spacing: 0.08em;
@@ -128,9 +161,10 @@ letter-spacing:0em;
 
 #content .documentDescription, #content #description {
 color:#7E725B;
-font:1.5em "NobileRegular", "Helvetica Neue",Arial,FreeSans,sans-serif;
-line-height: 1.5;
-margin: 1em 0px;
+font-family:'NobileRegular';
+font-size:18px;
+line-height:1.5;
+margin:20px 0;
 }
 
 #content a:link, dl.portlet a:link {

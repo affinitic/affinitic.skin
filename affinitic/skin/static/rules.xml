@@ -38,6 +38,8 @@
         
         <replace css:content-children="#portal-column-content"
                  css:theme-children="#content-text" />
+        
+        <drop css:theme="#content-image" if-path="clients" />
         <!--
         <replace css:content-children="#portal-footer-wrapper"
                  css:theme-children="#footer" />

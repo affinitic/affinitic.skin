@@ -6,8 +6,6 @@
    <cmf:registerDirectory
         name="affinitic_images"/>
    <cmf:registerDirectory
-        name="affinitic_templates"/>
-   <cmf:registerDirectory
         name="affinitic_styles"/>
 
 </configure>

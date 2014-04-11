@@ -7,9 +7,6 @@
  <object name="affinitic_images"
          meta_type="Filesystem Directory View"
          directory="affinitic.skin:skins/affinitic_images"/>
- <object name="affinitic_templates"
-         meta_type="Filesystem Directory View"
-         directory="affinitic.skin:skins/affinitic_templates"/>
  <object name="affinitic_styles"
          meta_type="Filesystem Directory View"
          directory="affinitic.skin:skins/affinitic_styles"/>
@@ -18,10 +15,8 @@
             based-on="Sunburst Theme">
   <layer name="affinitic_images"
          insert-after="custom"/>
-  <layer name="affinitic_templates"
-         insert-after="affinitic_images"/>
   <layer name="affinitic_styles"
-         insert-after="affinitic_templates"/>
+         insert-after="affinitic_images"/>
  </skin-path>
 
 </object>

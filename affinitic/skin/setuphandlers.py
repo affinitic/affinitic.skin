@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from Products.Five.component import enableSite
-from zope.app.component.interfaces import ISite
+from zope.component.interfaces import ISite
 import logging
 
 logger = logging.getLogger('affinitic.skin')

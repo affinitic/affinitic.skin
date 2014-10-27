@@ -34,5 +34,14 @@
       name="affinitic.js"
       />
 
+  <browser:page
+    name="getRightImageContent"
+    for="*"
+    class=".right_image_folder_view.RightImageFolderView"
+    attribute="getRightImageContent"
+    permission="zope2.View"
+    layer="..interfaces.IAffiniticTheme"
+    />
+
 
 </configure>

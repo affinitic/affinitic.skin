@@ -22,11 +22,14 @@
             theme-children="/html/head"
             />
 
+        <after theme-children="/html/head" if="$getrightimagecontent != ''">
+            <xsl:value-of select="$getrightimagecontent" disable-output-escaping="yes" />
+        </after>
 
         <copy attributes="class id dir" content="/html/body" theme="/html/body" />
-        
-        
-        
+
+
+
         <replace css:content-children="#portal-globalnav"
                  css:theme-children="#menu-sup" />
 
@@ -35,10 +38,10 @@
                  css:theme-children="#column-left"
                  if="$have_portlets" />
         -->
-        
+
         <replace css:content-children="#portal-column-content"
                  css:theme-children="#content-text" />
-        
+
         <drop css:theme="#content-image" if-path="clients" />
         <!--
         <replace css:content-children="#portal-footer-wrapper"

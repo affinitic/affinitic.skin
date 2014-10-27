@@ -1,0 +1,11 @@
+<section id="content-right-image"
+         tal:define="view context/getBannerStyle;">
+
+    <span tal:define="image-right view/getRightImageContent | nothing">
+      <img tal:condition="image-right"
+           src=""
+           tal:replace="structure image-right" />
+    </span>
+
+</section>
+<!--<div class="visualClear"></div>-->

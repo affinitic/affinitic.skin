@@ -32,12 +32,14 @@ font-family:sans-serif;
 #wrapper{
 }
 
-#boiteSite{
+#wrapper-site{
 width:1000px;
-height:740px;
+height:718px;
 /*border-radius:0px 30px 5px 25px;*/
 margin:auto;
 margin-top:10%;
+box-shadow: 7px 7px 20px rgba(253, 247, 221, 0.5),
+            -7px 0px 20px rgba(253, 247, 221, 0.5);
 }
 
 

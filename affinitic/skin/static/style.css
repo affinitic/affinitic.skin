@@ -35,11 +35,9 @@ font-family:sans-serif;
 #wrapper-site{
 width:1000px;
 height:718px;
-/*border-radius:0px 30px 5px 25px;*/
+border-radius:30px;
 margin:auto;
 margin-top:10%;
-box-shadow: 7px 7px 20px rgba(253, 247, 221, 0.5),
-            -7px 0px 20px rgba(253, 247, 221, 0.5);
 }
 
 
@@ -71,7 +69,11 @@ color:#929292;
 }
 
 #content-main{
+border-radius:0px 30px 0px 30px;
 background-color:rgba(255,255,255,1);
+box-shadow: 10px 10px 15px rgba(253, 247, 221, 0.5),
+            -10px 0px 15px rgba(253, 247, 221, 0.5);
+border-radius:0px 0px 30px 0px;
 }
 
 #logo-societe{
@@ -118,13 +120,13 @@ padding:0px 12px;
 }
 
 #content-right-image{
-width:390px;
+width:370px;
 margin-top:-172px;
 float:right;
 min-height:685px;
-margin-right:-19px;
 background-image:url("images/right_image.png");
 background-repeat:no-repeat;
+border-radius:0px 0px 30px 0px;
 }
 
 #footer{

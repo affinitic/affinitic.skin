@@ -40,10 +40,11 @@ margin:auto;
 margin-top:10%;
 }
 
-
+/*** MENU SUP ***/
 #menu-sup{
 border-bottom:1px solid #ddd;
 background-color:transparent;
+width:955px;
 }
 
 #menu-sup li{
@@ -68,18 +69,23 @@ transition: background-color 0.4s ease-in-out 0s;
 color:#929292;
 }
 
+
+/*** CONTENU PRINCIPAL ***/
 #content-main{
 border-radius:0px 30px 0px 30px;
 background-color:rgba(255,255,255,1);
 box-shadow: 10px 10px 15px rgba(253, 247, 221, 0.5),
             -10px 0px 15px rgba(253, 247, 221, 0.5);
-border-radius:0px 0px 30px 0px;
+border-radius:0px 30px 30px 30px;
 }
 
+
+/*** LOGO ***/
 #logo-societe{
 border-bottom:1px dotted #aaa;
 width:615px;
 margin-bottom:5px;
+height:163px;
 }
 
 #logo{
@@ -92,13 +98,15 @@ margin-top:8px;
 float:left;
 }
 
+
+/*** NOM SOCIETE ***/
 #societe{
+float:right;
 width:320px;
-height:165px;
+height:139px;
 margin-right:10px;
 margin-top:0px;
 text-align:right;
-float:right;
 color: #7E725B;
 font-family: "NobileRegular";
 font-size: 72px;
@@ -110,15 +118,18 @@ text-shadow:1px 1px 3px rgba(100, 100, 100, 0.7);
 }
 
 
+/*** CONTENT-TEXT ***/
 #content-text{
 float:left;
 width:585px;
-height:500px;
+height:475px;
 overflow:auto;
 margin-left:5px;
 padding:0px 12px;
 }
 
+
+/*** CONTENT-IMAGE-RIGHT ***/
 #content-right-image{
 width:370px;
 margin-top:-172px;
@@ -126,20 +137,9 @@ float:right;
 min-height:685px;
 background-image:url("images/right_image.png");
 background-repeat:no-repeat;
-border-radius:0px 0px 30px 0px;
+border-radius:0px 30px 30px 0px;
 }
 
-#footer{
-margin-top:20px;
-border-radius:12px;
-background-color:rgba(200,200,200,0.8);
-height:150px;
-color:#000;
-}
-
-#portal-footer{
-background-color:transparent;
-}
 
 
 .break-float{
@@ -183,7 +183,85 @@ color:#855934 !important;  /*#205C90 !important;*/
 }
 
 
+/*** FOOTER ***/
+#portal-footer{
+background-color:transparent;
+}
 
+#footer-theme{
+position:relative;
+top:-30px;
+z-index:10;
+width:610px;
+padding-left:20px;
+padding-top:4px;
+border-top:1px dotted #ccc;
+height:26px;
+background-color:#fff;
+border-radius:0px 0px 0px 30px;
+}
+
+
+/*** ZONE SOCIAL NETWORK ***/
+#social-network{
+height:24px;
+width:200px;
+margin-top:-40px;
+}
+
+#facebook a{
+float:left;
+display:inline-block;
+margin-right:5px;
+width:30px;
+height:24px;
+background-image:url(images/icon_fb.png);
+background-repeat:no-repeat;
+background-position:left top;
+}
+
+#facebook a:hover{
+background-position:left -26px;
+}
+
+#tweeter a{
+float:left;
+display:inline-block;
+width:30px;
+height:24px;
+background-image:url(images/icon_tweeter.png);
+background-repeat:no-repeat;
+background-position:left top;
+}
+
+#tweeter a:hover{
+background-position:left -26px;
+}
+
+#google-plus a{
+float:left;
+display:inline-block;
+width:30px;
+height:24px;
+background-image:url(images/icon_google_plus.png);
+background-repeat:no-repeat;
+background-position:left top;
+}
+
+#google-plus a:hover{
+background-position:left -26px;
+}
+
+
+#coordonnee{
+float:right;
+margin-top:8px;
+margin-right:4px;
+width:500px;
+font-size:0.6em;
+color:#999;
+text-align:right;
+}
 
 
 /***  SUPERSIZED ***/

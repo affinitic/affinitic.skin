@@ -135,6 +135,7 @@ width:370px;
 margin-top:-172px;
 float:right;
 min-height:685px;
+background-image:url(images/right_image.png);
 background-repeat:no-repeat;
 border-radius:0px 30px 30px 0px;
 }
@@ -173,7 +174,7 @@ margin:20px 0;
 
 #content a:link, dl.portlet a:link {
 border-bottom: 0.1em solid #CCCCCC;
-color:#333; /*#205C90;*/
+color:rgb(138,156,188);
 }
 
 
@@ -288,6 +289,15 @@ color:#7E725B;
 }
 
 
+/*** CLIENTS ***/
+article.client-listing{
+float:left;
+width:210px;
+margin:15px;
+border:1px solid rgb(138,156,188);
+border-radius:10px;
+padding:8px;
+}
 
 
 /***  SUPERSIZED ***/

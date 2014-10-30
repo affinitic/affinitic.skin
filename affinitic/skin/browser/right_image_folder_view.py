@@ -19,17 +19,11 @@ class RightImageFolderView(BrowserView):
 
     def getRightImageContent(self):
         """
-        return the banner background image style regarding folder
+        return the right-content background image style regarding folder
         """
-        banner = self.safe_getattr(self.context, 'right_image.png', None)
-        if not banner:
+        rightImage = self.safe_getattr(self.context, 'right_image.png', None)
+        if not rightImage:
             return ""
-        bannerUrl = banner.absolute_url()
-        style = """
-            <style type="text/css">
-                #content-right-image{
-                   background-image:url(%s);
-                }
-            </style>
-        """ % bannerUrl
+        rightImageUrl = rightImage.absolute_url()
+        style = """<style type="text/css">#content-right-image{background-image:url(%s);}</style>""" % rightImageUrl
         return style

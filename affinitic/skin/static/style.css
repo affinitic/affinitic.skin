@@ -293,10 +293,11 @@ color:#7E725B;
 article.client-listing{
 float:left;
 width:210px;
-margin:15px;
+margin:25px;
 border:1px solid rgb(138,156,188);
 border-radius:10px;
 padding:8px;
+box-shadow:3px 3px 6px rgba(50,50,50,0.4);
 }
 
 

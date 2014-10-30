@@ -21,6 +21,18 @@
 }
 
 
+.break-float{
+clear:both;
+}
+
+.float-left{
+float:left;
+}
+
+.float-right{
+float:right;
+}
+
 
 body{
 margin:0;
@@ -138,12 +150,6 @@ min-height:685px;
 background-image:url(images/right_image.png);
 background-repeat:no-repeat;
 border-radius:0px 30px 30px 0px;
-}
-
-
-
-.break-float{
-clear:both;
 }
 
 #content p{
@@ -273,7 +279,7 @@ padding:8px;
 margin-bottom:10px;
 }
 
-section.zaf-boyz-short-description{
+section#zaf-boyz-short-description{
 float:left;
 width:300px;
 }
@@ -284,7 +290,8 @@ width:60px;
 margin-right:90px;
 }
 
-article.zaf-boyz-description h3{
+article#zaf-boyz-description h1,
+article#zaf-boyz-description h3{
 color:#7E725B;
 }
 
@@ -299,6 +306,36 @@ border-radius:10px;
 padding:8px;
 box-shadow:3px 3px 6px rgba(50,50,50,0.4);
 }
+
+article#client-description{}
+
+article#client-description h1,
+article#client-description h3{
+color:#7E725B;
+}
+
+section#client-image-site-description{
+width:402px;
+margin:auto;
+}
+
+section#client-site-description{
+width:400px;
+margin:auto;
+margin-top:15px;
+}
+
+div.client-url{
+width:300px;
+}
+
+div.client-date{
+width:98px;
+text-align:right;
+padding-right:1px;
+}
+
+
 
 
 /***  SUPERSIZED ***/

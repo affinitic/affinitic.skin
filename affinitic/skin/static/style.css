@@ -279,9 +279,9 @@ padding:8px;
 margin-bottom:10px;
 }
 
-section#zaf-boyz-short-description{
+section.zaf-boyz-short-description{
 float:left;
-width:300px;
+width:400px;
 }
 
 section.zaf-boyz-vignette{

@@ -62,7 +62,17 @@ width:955px;
 #menu-sup li{
 }
 
-#menu-sup li a{
+nav#menu-sup li:first-child,
+nav#menu-sup li:first-child a{
+border-radius:5px 0px 0px 0px;
+}
+
+nav#menu-sup li:last-child,
+nav#menu-sup li:last-child a{
+border-radius:0px 5px 0px 0px;
+}
+
+nav#menu-sup li a{
 display:inline-block;
 height:33px;
 background-color:#fff;
@@ -77,7 +87,7 @@ color:#ccc;
 transition: background-color 0.4s ease-in-out 0s;
 }
 
-#menu-sup li a:hover{
+nav#menu-sup li a:hover{
 color:#929292;
 }
 

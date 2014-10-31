@@ -290,6 +290,7 @@ width:60px;
 margin-right:90px;
 }
 
+.brun-titre,
 article#zaf-boyz-description h1,
 article#zaf-boyz-description h3{
 color:#7E725B;
@@ -305,6 +306,13 @@ border:1px solid rgb(138,156,188);
 border-radius:10px;
 padding:8px;
 box-shadow:3px 3px 6px rgba(50,50,50,0.4);
+}
+
+section.fleche-plus{
+position: relative;
+top:6px;
+left:190px;
+width:10px;
 }
 
 article#client-description{}

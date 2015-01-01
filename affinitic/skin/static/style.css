@@ -206,7 +206,7 @@ background-color:transparent;
 
 #footer-theme{
 position:relative;
-top:-30px;
+top:-32px;
 z-index:10;
 width:610px;
 padding-left:20px;
@@ -286,9 +286,9 @@ background-position:left -26px;
 
 #coordonnee{
 float:right;
-margin-top:8px;
+margin-top:-3px;
 margin-right:4px;
-width:500px;
+width:450px;
 font-size:0.6em;
 color:#999;
 text-align:right;

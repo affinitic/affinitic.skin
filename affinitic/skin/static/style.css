@@ -180,6 +180,7 @@ font:30px "NobileRegular";
 margin-top: 0;
 color:#7e725b;
 letter-spacing: 0em;
+margin-bottom: 20px;
 }
 
 #content h2{
@@ -193,7 +194,7 @@ color:#7E725B;
 font-family:'NobileRegular';
 font-size:18px;
 line-height:1.5;
-margin:20px 0;
+margin-bottom: 20px;
 }
 
 #content a:link, dl.portlet a:link {

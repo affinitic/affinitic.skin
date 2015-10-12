@@ -92,6 +92,10 @@ color:#929292;
 }
 
 /*** BREADCRUMBS ***/
+body.section-front-page #portal-breadcrumbs {
+display:none;
+}
+
 #breadcrumbs-you-are-here{
 display:none;
 }

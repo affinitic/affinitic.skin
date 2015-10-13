@@ -201,11 +201,14 @@ line-height:1.5;
 margin-bottom: 20px;
 }
 
-#content a:link, dl.portlet a:link {
+#content a:link, dl.portlet a:link, #content a:visited, dl.portlet a:visited {
 border-bottom: 0.1em solid #CCCCCC;
 color:rgb(138,156,188);
 }
 
+#portal-breadcrumbs a:link, #portal-breadcrumbs a:visited {
+color:rgb(138,156,188);
+}
 
 #content a:hover, dl.portlet a:hover {
 color:#855934 !important;  /*#205C90 !important;*/
@@ -329,9 +332,14 @@ margin-right:90px;
 
 .brun-titre,
 article#zaf-boyz-description h1,
-article#zaf-boyz-description h3{
+article#zaf-boyz-description h3,
+h3 {
 color:#7E725B;
 margin-top:8px;
+}
+
+#zaf-boyz-description img {
+border-radius:5px;
 }
 
 section.zaf-boyz-short-description h2{

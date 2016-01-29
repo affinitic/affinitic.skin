@@ -348,14 +348,24 @@ margin-bottom:6px;
 
 
 /*** CLIENTS ***/
+#client-listing-wrapper{
+text-align: center;
+margin:auto;
+width:520px;
+}
+
 article.client-listing{
 float:left;
 width:210px;
-margin:25px;
+margin:15px;
 border:1px solid rgb(138,156,188);
 border-radius:10px;
 padding:8px;
 box-shadow:3px 3px 6px rgba(50,50,50,0.4);
+}
+
+#content article.client-listing a{
+border-bottom:none;
 }
 
 section.fleche-plus{
